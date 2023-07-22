@@ -17,7 +17,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={inter.className + " h-screen w-screen bg-white dark:bg-black"}>
+      <body className={inter.className + " h-auto w-full bg-white dark:bg-[#090D1F]"}>
         <DarkThemeProvider>
         <Navbar/>
         {children}

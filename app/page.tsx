@@ -1,8 +1,10 @@
-import Image from 'next/image'
-import ToogleButton from "../components/ToogleButton"
+import Header from '@/sections/Header'
 export default function Home() {
-  return <>
-    <ToogleButton/>
-    blog
-  </>
+  return (
+    <>
+      <div className="max-w-7xl mx-auto">
+        <Header />
+      </div>
+    </>
+  )
 }
