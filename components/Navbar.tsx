@@ -31,7 +31,7 @@ const navigation = [
   },
 ]
 
-function classNames(...classes) {
+function classNames(...classes:string[]):string {
   return classes.filter(Boolean).join(' ')
 }
 
@@ -60,8 +60,8 @@ export default function Navbar() {
               <div className="flex flex-1 items-center justify-center md:items-stretch md:justify-start">
                 <div className="flex flex-shrink-0 items-center">
                 
-                  <h1 className="text-black font-bold text-lg ml-2">
-                  Your Name
+                  <h1 className="text-black dark:text-white font-bold text-lg ml-2">
+                  Anas Aqeel
                   </h1>
                 </div>
                 <div className="hidden md:ml-6 md:flex w-full justify-end items-center">
@@ -73,8 +73,8 @@ export default function Navbar() {
                         className={classNames(
                           path.includes(item.path)
                             ? 'text-[#999900] '
-                            : 'text-[#65735b] hover:text-[#999900]',
-                          'rounded-md px-3 py-2 text-sm font-normal',
+                            : 'text-[#1A1A1A] dark:text-white hover:text-[#999900]',
+                          'rounded-md px-3 py-2 font-medium text-base',
                         )}
                         aria-current={
                           path.includes(item.path) ? 'page' : undefined
