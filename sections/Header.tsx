@@ -1,6 +1,7 @@
 import React from 'react'
 import BlogCardVertical from '../components/BlogCardVertical'
 import BlogCardHorizontal from '../components/BlogCardHorizontal'
+
 const Header = () => {
   return (
     <div>
@@ -8,9 +9,19 @@ const Header = () => {
         THE BLOG{' '}
       </div>
       <div className="mt-7  px-8">
-        <div className="text-black  dark:text-white font-bold text-xl">Recent blog posts</div>
+        <div className="text-black  dark:text-white font-bold text-xl">
+          Recent blog posts
+        </div>
         <div className="mt-7 mb-16 grid grid-cols-2 gap-x-8">
-          <BlogCardVertical />
+          <BlogCardVertical
+            author="Olivia Rhye"
+            date="1 Jan 2023"
+            img="/images/blog.svg"
+            tags={['Design', 'Research', 'Presentation']}
+            text="How do you create compelling presentations that wow your colleagues
+            and impress your managers?"
+            title="UX review presentations"
+          />
           <div className="flex flex-col gap-y-8">
             <BlogCardHorizontal
               img="/images/blog2.svg"
