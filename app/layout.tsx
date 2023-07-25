@@ -4,6 +4,7 @@ import { Inter } from 'next/font/google'
 import DarkThemeProvider from "../themes/ThemeProvider"
 import Navbar from "../components/Navbar"
 import Footer from '@/components/Footer'
+import { Colors } from '@/utils/colors'
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
@@ -22,6 +23,7 @@ export default function RootLayout({
         <DarkThemeProvider>
         <Navbar/>
         {children}
+        <Colors/>
         <Footer/>
         </DarkThemeProvider>
       </body>

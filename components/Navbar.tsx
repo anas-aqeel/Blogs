@@ -57,8 +57,8 @@ export default function Navbar() {
                   )}
                 </Disclosure.Button>
               </div>
-              <div className="flex flex-1 items-center justify-center md:items-stretch md:justify-start">
-                <div className="flex flex-shrink-0 items-center">
+              <div className="flex flex-1 items-center justify-start md:items-stretch md:justify-start">
+                <div className="flex flex-shrink-0 items-center ml-10 md:ml-0">
                 
                   <h1 className="text-black dark:text-white font-bold text-lg ml-2">
                   Anas Aqeel

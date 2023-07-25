@@ -3,11 +3,11 @@ import React from 'react'
 
 const BlogsContainer = () => {
   return (
-    <div className="mt-16 pl-8">
+    <div className="mt-16 px-8">
       <div className="text-black  dark:text-white font-bold text-xl">
         All blog posts
       </div>
-      <div className="grid grid-cols-3 gap-x-8 gap-y-12 mt-8">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-x-4 lg:gap-x-8 gap-y-6 lg:gap-y-12 mt-8">
         {/* <BlogCardVertical />
         <BlogCardVertical />
         <BlogCardVertical />

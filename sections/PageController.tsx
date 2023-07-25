@@ -2,7 +2,7 @@ import React from 'react'
 
 const PageController = () => {
   return (
-    <div className="w-full flex justify-between items-center mt-16 pl-8">
+    <div className="w-full flex justify-between items-center mt-16 px-8">
       <div className="flex items-center text-[#667085] font-medium gap-x-2">
         <p>{'<'}-</p>
         <p className="text-sm">Previous</p>
