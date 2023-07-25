@@ -1,6 +1,6 @@
 import React from 'react'
-import BlogCardVertical from '../components/BlogCardVertical'
-import BlogCardHorizontal from '../components/BlogCardHorizontal'
+import BlogCardVertical from '../components/CardVertical'
+import BlogCardHorizontal from '../components/CardHorizontal'
 
 const Header = () => {
   return (

@@ -1,4 +1,4 @@
-import BlogCardVertical from '@/components/BlogCardVertical'
+import BlogCardVertical from '@/components/CardVertical'
 import React from 'react'
 
 const BlogsContainer = () => {
@@ -8,11 +8,7 @@ const BlogsContainer = () => {
         All blog posts
       </div>
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-x-4 lg:gap-x-8 gap-y-6 lg:gap-y-12 mt-8">
-        {/* <BlogCardVertical />
-        <BlogCardVertical />
-        <BlogCardVertical />
-        <BlogCardVertical />
-        <BlogCardVertical /> */}
+       
         <BlogCardVertical
             author="Olivia Rhye"
             date="1 Jan 2023"

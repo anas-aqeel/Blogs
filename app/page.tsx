@@ -1,5 +1,5 @@
 import BlogsContainer from '@/sections/BlogsContainer'
-import Header from '@/sections/Header'
+import Header from '@/sections/BlogHeader'
 import PageController from '@/sections/PageController'
 export default function Home() {
   return (

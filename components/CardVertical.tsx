@@ -1,15 +1,20 @@
 import React from 'react'
-import { blogCard } from './BlogCardHorizontal'
-import {colors} from "../utils/colors"
+import { blogCard } from './CardHorizontal'
+import { colors } from '../utils/colors'
 
-const BlogCardVertical = (blog: blogCard) => {
+const CardVertical = (blog: blogCard) => {
   return (
     <div>
       <img src={blog.img} className="w-full h-auto" />
       <div className="mt-8 space-y-3">
-        <div className="text-[#6941C6] font-semibold text-sm">
-          {blog.author} • {blog.date}
-        </div>
+        {blog.author != '' ? (
+          <div className="text-[#6941C6] font-semibold text-sm">
+            {blog.author} • {blog.date}
+          </div>
+        ) : (
+          <></>
+        )}
+
         <div className="flex w-full justify-between items-center">
           <h1 className="text-black  dark:text-white text-2xl font-semibold">
             {blog.title}
@@ -36,4 +41,4 @@ const BlogCardVertical = (blog: blogCard) => {
   )
 }
 
-export default BlogCardVertical
+export default CardVertical
