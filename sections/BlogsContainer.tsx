@@ -1,4 +1,4 @@
-import BlogCardVertical from '@/components/CardVertical'
+import BlogCardVertical from '@/components/BlogCardVertical'
 import React from 'react'
 
 const BlogsContainer = () => {

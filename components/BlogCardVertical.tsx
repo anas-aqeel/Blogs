@@ -1,5 +1,5 @@
 import React from 'react'
-import { blogCard } from './CardHorizontal'
+import { blogCard } from './BlogCardHorizontal'
 import { colors } from '../utils/colors'
 
 const CardVertical = (blog: blogCard) => {
@@ -16,10 +16,10 @@ const CardVertical = (blog: blogCard) => {
         )}
 
         <div className="flex w-full justify-between items-center">
-          <h1 className="text-black  dark:text-white text-2xl font-semibold">
+          <h1 className="text-black  dark:text-white text-2xl font-semibold w-[95%]">
             {blog.title}
           </h1>
-          <h1>--{'>'}</h1>
+          <h1 className='whitespace-nowrap'>--{'>'}</h1>
         </div>
         <div className="text-[#667085] text-base font-normal">
           <p>{blog.text}</p>

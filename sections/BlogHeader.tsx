@@ -1,11 +1,11 @@
 import React from 'react'
-import BlogCardVertical from '../components/CardVertical'
-import BlogCardHorizontal from '../components/CardHorizontal'
+import BlogCardVertical from '../components/BlogCardVertical'
+import BlogCardHorizontal from '../components/BlogCardHorizontal'
 
 const Header = () => {
   return (
     <div>
-      <div className=" border-b-[2px] border-t-[2px] border-black dark:border-white dark:border-opacity-100 border-opacity-30  font-bold text-[17.2vw] leading-snug text-center">
+      <div className=" border-b-[2px] border-t-[2px] border-black dark:border-white dark:border-opacity-100 border-opacity-30  font-bold text-[15.9vw] leading-snug text-center">
         THE BLOG{' '}
       </div>
       <div className="mt-7  px-8">

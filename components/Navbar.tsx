@@ -26,7 +26,7 @@ const navigation = [
   {
     path: '',
     name: 'Newsletter',
-    href: '/about',
+    href: '/newsletter',
     current: false,
   },
 ]
