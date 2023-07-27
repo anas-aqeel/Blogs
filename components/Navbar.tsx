@@ -29,9 +29,15 @@ const navigation = [
     href: '/newsletter',
     current: false,
   },
+  {
+    path: '',
+    name: 'Contact',
+    href: '/contact',
+    current: false,
+  },
 ]
 
-function classNames(...classes:string[]):string {
+function classNames(...classes: string[]): string {
   return classes.filter(Boolean).join(' ')
 }
 
@@ -59,9 +65,8 @@ export default function Navbar() {
               </div>
               <div className="flex flex-1 items-center justify-start md:items-stretch md:justify-start">
                 <div className="flex flex-shrink-0 items-center ml-10 md:ml-0">
-                
                   <h1 className="text-black dark:text-white font-bold text-lg ml-2">
-                  Anas Aqeel
+                    Anas Aqeel
                   </h1>
                 </div>
                 <div className="hidden md:ml-6 md:flex w-full justify-end items-center">
@@ -86,8 +91,8 @@ export default function Navbar() {
                   </div>
                 </div>
               </div>
-              <div className='ml-5'>
-                <ToogleButton/>
+              <div className="ml-5">
+                <ToogleButton />
               </div>
             </div>
           </div>

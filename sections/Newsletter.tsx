@@ -9,7 +9,7 @@ const Newsletter = () => {
       <h1 className="mt-3 text-5xl font-semibold text-black dark:text-white text-center">
         Stories and interviews
       </h1>
-      <p className="mt-6 text-xl text-[#C0C5D0] text-center max-w-3xl mx-auto">
+      <p className="mt-6 text-base px-3 sm:text-xl text-[#C0C5D0] text-center max-w-3xl mx-auto">
         Subscribe to learn about new product features, the latest in technology,
         solutions, and updates.
       </p>

@@ -1,31 +1,7 @@
 import React from 'react'
-import { BsInstagram, BsWhatsapp } from 'react-icons/bs'
-import { BiLogoLinkedin } from 'react-icons/bi'
-import { AiFillGithub, AiOutlineGooglePlus } from 'react-icons/ai'
+import {socialIcons} from "../utils/socialIcons"
 
 const Footer = () => {
-  let socialIcons = [
-    {
-      link: '',
-      Icon: AiOutlineGooglePlus,
-    },
-    {
-      link: '',
-      Icon: BsInstagram,
-    },
-    {
-      link: '',
-      Icon: BiLogoLinkedin,
-    },
-    {
-      link: '',
-      Icon: AiFillGithub,
-    },
-    {
-      link: '',
-      Icon: BsWhatsapp,
-    },
-  ]
   return (
     <div className=" mt-24">
       <footer className=" text-black text-center dark:text-white w-full dark:bg-transparent bg-opacity-05">
