@@ -4,7 +4,9 @@ import { BiSolidPhoneCall } from 'react-icons/bi'
 import { MdEmail, MdLocationOn } from 'react-icons/md'
 const ContactForm = () => {
   return (
-    <div className="max-w-7xl mx-auto mt-[50px] rounded-lg shadow-xl p-2.5 flex bg-[#fefefe] dark:bg-opacity-5 dark:border-opacity-20  dark:border dark:border-white">
+    <div className="relative max-w-7xl mx-auto mt-[50px] rounded-lg shadow-xl p-2.5 flex bg-[#fefefe] dark:bg-opacity-5 dark:border-opacity-20  dark:border dark:border-white">
+        <img src="/images/contact-bg-arrow.svg" alt="" className='absolute bottom-0 right-0 z-0' />
+     
       <div className="w-[40%] rounded-lg bg-black  p-10 relative ">
         <img
           src="/images/contact.svg"
@@ -48,8 +50,7 @@ const ContactForm = () => {
           ))}
         </div>
       </div>
-      <div className="px-12 py-14 text-black  w-[60%] flex flex-col gap-y-11 relative">
-        <img src="/images/contact-bg-arrow.svg" alt="" className='absolute bottom-0 right-0 z-0' />
+      <div className="px-12 py-14 text-black  w-[60%] flex flex-col gap-y-11 ">
         <div className="flex gap-x-10 ">
           <div className="group flex flex-col w-full">
             <label className="font-medium group-hover:text-black dark:group-hover:text-white text-[#8D8D8D]">
