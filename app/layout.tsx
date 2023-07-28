@@ -1,8 +1,8 @@
 import './globals.css'
 import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
-import DarkThemeProvider from "../themes/ThemeProvider"
-import Navbar from "../components/Navbar"
+import DarkThemeProvider from '../themes/ThemeProvider'
+import Navbar from '../components/Navbar'
 import Footer from '@/components/Footer'
 import { Colors } from '@/utils/colors'
 const inter = Inter({ subsets: ['latin'] })
@@ -19,12 +19,16 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={inter.className + " h-auto w-full bg-white dark:bg-[#090D1F]"}>
+      <body
+        className={
+          inter.className + ' h-auto w-full bg-white dark:bg-[#090D1F]'
+        }
+      >
         <DarkThemeProvider>
-        <Navbar/>
-        {children}
-        <Colors/>
-        <Footer/>
+          <Navbar />
+          {children}
+          <Colors />
+          <Footer />
         </DarkThemeProvider>
       </body>
     </html>
