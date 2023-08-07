@@ -1,33 +1,60 @@
 import React from 'react'
-
+import { MdEmail } from 'react-icons/md'
 const Newsletter = () => {
   return (
-    <div className="mt-10">
-      <h3 className="text-base font-semibold text-[#7F56D9] text-center">
-        Newlatters
-      </h3>
-      <h1 className="mt-3 text-5xl font-semibold text-black dark:text-white text-center">
-        Stories and interviews
-      </h1>
-      <p className="mt-6 text-base px-3 sm:text-xl text-[#C0C5D0] text-center max-w-3xl mx-auto">
-        Subscribe to learn about new product features, the latest in technology,
-        solutions, and updates.
-      </p>
-      <div className="max-w-[500px] mx-auto flex mt-10 justify-center gap-x-4">
-        <div className="">
-          <input
-            className="bg-gray-100 dark:bg-white rounded-lg text-black dark:text-[#667085] py-3 px-4 w-full"
-            placeholder="Enter your email"
-          />
-          <p className="text-[#adb1b9] dark:text-[#C0C5D0] text-sm mt-2">
-            We care about your data in our privacy policy
+    <section className="bg-white dark:bg-gray-900">
+      <div className="py-8 px-4 mx-auto max-w-screen-xl lg:py-16 lg:px-6">
+        <div className="mx-auto max-w-screen-md text-center">
+          <h2 className="mb-4 text-3xl font-extrabold tracking-tight text-gray-900 sm:text-4xl dark:text-white">
+            Sign up for our newsletter
+          </h2>
+          <p className="mx-auto mb-8 max-w-2xl font-light text-gray-500 md:mb-12 sm:text-xl dark:text-gray-400">
+            Stay up to date with the roadmap progress, announcements and
+            exclusive discounts feel free to sign up with your email.
           </p>
+          <form action="" className="max-w-lg mx-auto">
+            <div className="items-center mx-auto mb-3 space-y-4 max-w-md sm:flex sm:space-y-0">
+              <div className="relative w-full">
+                <label
+                  htmlFor="email"
+                  className="hidden mb-2 text-sm font-medium text-gray-900 dark:text-gray-300"
+                >
+                  Email address
+                </label>
+                <div className="flex absolute inset-y-0 left-0 items-center pl-3 pointer-events-none">
+                  <MdEmail className="w-5 h-5 text-gray-500 dark:text-gray-400" />
+                </div>
+                <input
+                  className="block p-3 pl-10 w-full text-sm text-gray-900 bg-white rounded-lg border border-gray-300 sm:rounded-none sm:rounded-l-lg focus:ring-primary-500 focus:border-primary-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500"
+                  placeholder="Enter your email"
+                  type="email"
+                  id="email"
+                  required
+                />
+              </div>
+              <div>
+                <button
+                  type="submit"
+                  className="py-3 px-5 w-full text-sm font-medium text-center text-white rounded-lg border cursor-pointer bg-primary-700 border-primary-600 sm:rounded-none sm:rounded-r-lg hover:bg-primary-800 focus:ring-4 focus:ring-primary-300 dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800"
+                >
+                  Subscribe
+                </button>
+              </div>
+            </div>
+            <div className="mx-auto max-w-md text-sm text-left text-gray-500 newsletter-form-footer dark:text-gray-300">
+              We care about the protection of your data.{' '}
+              <a
+                href="#"
+                className="font-medium text-primary-600 dark:text-primary-500 hover:underline"
+              >
+                Read our Privacy Policy
+              </a>
+              .
+            </div>
+          </form>
         </div>
-        <button className='bg-[#7F56D9] rounded-lg text-base py-3 px-5 h-fit text-white'>
-        Subscribe
-        </button>
       </div>
-    </div>
+    </section>
   )
 }
 

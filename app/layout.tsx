@@ -21,7 +21,7 @@ export default function RootLayout({
     <html lang="en">
       <body
         className={
-          inter.className + ' h-auto w-full bg-white dark:bg-[#090D1F]'
+          inter.className + ' h-auto w-full bg-white dark:bg-[#0e1827]'
         }
       >
         <DarkThemeProvider>

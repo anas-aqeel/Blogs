@@ -1,5 +1,5 @@
 import React from 'react'
-import {socialIcons} from "../utils/socialIcons"
+import { socialIcons } from '../utils/socialIcons'
 
 const Footer = () => {
   return (
@@ -7,7 +7,13 @@ const Footer = () => {
       <footer className=" text-black text-center dark:text-white w-full dark:bg-transparent bg-opacity-05">
         {/*Copyright section*/}
         <div className="p-4 max-w-7xl mx-auto px-5 flex justify-between items-center sm:flex-row flex-col-reverse gap-y-3">
-          <p>© Copyright 2023 AnasAqeel</p>
+          <span className="block text-sm text-center text-gray-500 dark:text-gray-400">
+            © 2023-2024{' '}
+            <a href="#" className="hover:underline">
+              AnasAqeel
+            </a> 
+            . All Rights Reserved.
+          </span>
           <div className="flex justify-center">
             {socialIcons.map(({ Icon }) => (
               <a

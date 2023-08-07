@@ -46,7 +46,7 @@ export default function Navbar() {
   return (
     <Disclosure
       as="nav"
-      className="bg-white dark:bg-[#090D1F] sticky top-0 left-0 right-0  z-40"
+      className="bg-transparent sticky top-0 left-0 right-0  z-50"
     >
       {({ open }) => (
         <>
