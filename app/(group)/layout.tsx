@@ -1,7 +1,6 @@
-import './globals.css'
+import '../globals.css'
 import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
-import DarkThemeProvider from '@/themes/ThemeProvider'
 import Navbar from '@/components/Navbar'
 import Footer from '@/components/Footer'
 import { Colors } from '@/utils/colors'
@@ -24,10 +23,9 @@ export default function RootLayout({
           inter.className + ' h-auto w-full bg-white dark:bg-[#0e1827]'
         }
       >
-        <DarkThemeProvider>
+          <Navbar />
           {children}
-          <Colors />
-        </DarkThemeProvider>
+          <Footer />
       </body>
     </html>
   )

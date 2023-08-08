@@ -5,7 +5,7 @@ import PageController from '@/sections/PageController'
 export default function Home() {
   return (
     <>
-      <div className="max-w-7xl mx-auto">
+      <div className="max-w-[1450px] mx-auto">
         <Header />
         <BlogsContainer />
         <PageController />

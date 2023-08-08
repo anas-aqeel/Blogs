@@ -6,7 +6,7 @@ const Page = () => {
   return (
     <>
       <Newsletter/>
-    <div className='max-w-7xl mx-auto'>
+    <div className='max-w-[1450px] mx-auto'>
       <BlogsContainer/>
     </div>
     </>

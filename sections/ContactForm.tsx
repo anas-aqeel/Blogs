@@ -5,7 +5,7 @@ import { MdEmail, MdLocationOn } from 'react-icons/md'
 const ContactForm = () => {
   return (
     <div className="px-5">
-      <div className="relative max-w-7xl mx-auto mt-[50px] rounded-lg shadow-xl p-2.5 flex md:flex-row flex-col  bg-[#fefefe]  dark:bg-opacity-5 dark:border-opacity-20  dark:border dark:border-white">
+      <div className="relative max-w-[1450px] mx-auto mt-[50px] rounded-lg shadow-xl p-2.5 flex md:flex-row flex-col  bg-[#fefefe]  dark:bg-opacity-5 dark:border-opacity-20  dark:border dark:border-white">
         <img
           src="/images/contact-bg-arrow.svg"
           alt=""

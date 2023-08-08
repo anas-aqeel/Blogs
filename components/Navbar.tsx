@@ -50,7 +50,7 @@ export default function Navbar() {
     >
       {({ open }) => (
         <>
-          <div className="mx-auto max-w-7xl px-2 md:px-6 lg:px-8 py-3 ">
+          <div className="mx-auto max-w-[1450px] px-2 md:px-6 lg:px-8 py-3 ">
             <div className="relative flex h-16 items-center justify-between">
               <div className="absolute inset-y-0 left-0 flex items-center md:hidden">
                 {/* Mobile menu button*/}
